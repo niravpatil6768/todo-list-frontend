@@ -1,20 +1,91 @@
-<div class="centered-content">
+<!--<div class="centered-content">
     <div class="login-box">
         <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" #emailInput class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <i class="fa fa-user"></i>
+              <label >Email address</label>
+              <input type="email" #emailInput class="form-control"  placeholder="Enter email">
+             
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" #pwInput class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <span class="input-group-text" style="font-size: 25px; margin-right: 5px; color: #5eba7d;">
+                <i class="fa fa-user"></i>
+            </span>
+              <label >Password</label>
+              <input type="password" #pwInput class="form-control" placeholder="Password">
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary" (click)="onLoginButtonClicked(emailInput.value,pwInput.value)">Submit</button>
+            
+            <button class="btn btn-primary"  (click)="onLoginButtonClicked(emailInput.value,pwInput.value)">Submit</button>
           </form>
     </div>
+</div>-->
+
+
+
+<div class=" centered-content">
+
+
+  <div class="loginform" class="login-box">
+
+    <div class="panel">
+      <h1 style="text-align: center; font-weight:bolder; font-size:xx-large; color: #0095ff; ">Login</h1>
+      <hr style="line-height: 25px;">
+      <p class="text-success" style="font-weight: bold;">Please enter your Email & Password</p>
+    </div>
+
+    <div>
+      <div class="form-group" style="padding-right: 0%;">
+        <div class="input-group-prepend" style="display: inline-flex;">
+          <span class="input-group-text" style=" margin-right: 10px; font-size: 25px; margin-bottom: 36px; color: #5eba7d; display: inline-block">
+            <i class="fa fa-user-circle-o" style="font-size: 25px;"></i>
+          </span>
+          <input type="email" class="box" #emailInput id="email" name="email"  placeholder="Enter Email" 
+            required>
+        </div>
+        
+
+      </div>
+
+      
+
+
+
+      <div class="form-group" style="padding-right: 0%;" >
+        <div class="input-group-prepend" style="display: inline-flex;">
+          <span class="input-group-text"  style="margin-right: 10px; font-size: 25px; margin-bottom: 37px;color: #0095ff;  display: inline-block">
+            <i class="fa fa-key" style="font-size: 25px;"></i>
+          </span>
+          <input type="password" class="box" #pwInput id="password" name="password" 
+            placeholder="Enter Password"  required>
+        </div>
+        <!--<div class="alert alert-danger" *ngIf="password.invalid && password.touched">
+                              **Please Enter the Password
+                          </div>-->
+      </div>
+
+      <!-- <div class="captchaClass">
+                          <ngx-recaptcha2 [siteKey]="siteKey" name="captchaElement" ngModel #captchaElement="ngModel"
+                              required></ngx-recaptcha2>
+                      </div>-->
+
+
+      <br>
+      <button class="btn btn-outline-success" (click)="onLoginButtonClicked(emailInput.value,pwInput.value)"
+        style="width: 100%; margin-top: auto;">Login</button>
+
+      <!--<a (click)="onsignup()">Signup Here</a>-->
+
+    </div>
+
+    <!--<button class="badge badge-pill badge-success" style="font-size:medium;" (click)="onsignup()" >Register Here</button>-->
+
+
+
+
+    <br>
+
+
+  </div>
+
+
 </div>

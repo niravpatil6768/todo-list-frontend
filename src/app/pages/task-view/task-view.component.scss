@@ -5,7 +5,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%
+    height: 100%;
+    background: #27d7a1;
 }
 
 .task-manager-container{
@@ -35,7 +36,17 @@
     padding: 42px;
     border-top-right-radius: 8px ;
     border-bottom-right-radius: 8px ;
-}
+
+    .title{
+        margin: 0;
+    }
+    .top-bar{
+    margin-bottom: 20px;    
+    display: flex;
+    .title{
+        flex-grow: 1;
+    }
+}}
 
 .title {
     font-family: 'Lato';
@@ -73,10 +84,14 @@
 }
 
 .task{
+    display: flex;
     background: white;
     padding: 15px 20px;
     border-radius: 5px;
     margin-top: 10px;
+
+    justify-items: center;
+    align-items: center;
 
     &:not(.complete){
     cursor: pointer;
@@ -88,12 +103,28 @@
 
     &:hover{
         box-shadow: 0 0 0 5px #eeeeee;
+
+        .task-buttons{
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 }
 
-    &.completed{
+    &.completed .task-text{
         text-decoration: line-through;
         opacity: 0.8;
+    }
+
+    .task-text{
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .task-buttons{
+        transition: opacity 0.2s, transform 0.2s;
+        opacity: 0;
+        transform: scale(0.85);
     }
 }
 

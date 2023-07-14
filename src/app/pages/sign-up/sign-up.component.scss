@@ -1,4 +1,4 @@
-//@import '../../../main-styles.scss';
+@import '../../../main-styles.scss';
 
 
 .centered-content {
@@ -25,7 +25,7 @@
 }
 
 .loginform{
-    //text-align: center;
+    text-align: center;
 }
 
 .main-div{
@@ -50,7 +50,7 @@
 
 }
 
-/*@media screen and (max-width:400px) {
+@media screen and (max-width:400px) {
 
     .main-div .input-group-prepend{
         display: block;
@@ -59,10 +59,9 @@
     .main-div .input-group-prepend .input-group-text{
         margin-bottom: 25px;
         justify-content: center;
-       // display: block;
     }
 
-}*/
+}
 
 @media screen and (max-width:1050px) {
     .captchaClass {
@@ -85,35 +84,3 @@
     margin-bottom: 30px;
     line-height: 24px;
 }
-
-@media screen and (max-width:400px) {
-
-    .main-div .input-group-prepend{
-        display: block;
-    }
-
-    .main-div .input-group-prepend .input-group-text{
-        margin-bottom: 25px;
-        justify-content: center;
-    }
-
-}
-
-.box{
-    display: inline-block;
-    //width: fit-content;
-   
-   // margin: 10rem auto 30px;
-    padding: 10px 10px 10px 120px;
-    padding-right: -10%;
-    margin-bottom: 10%;
-   padding-bottom: 10px;
-   border-color: #f5f2f2;
-   box-shadow: #f71212;
-  
-   text-align: left;
-   justify-content: center;
-   align-items: center;
-   height: 55px;
-}
-

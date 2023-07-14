@@ -1,0 +1,92 @@
+<!--<div class="centered-content">
+    <div class="login-box">
+        <form>
+            <div class="form-group">
+              <i class="fa fa-user"></i>
+              <label >Email address</label>
+              <input type="email" #emailInput class="form-control"  placeholder="Enter email">
+             
+            </div>
+            <div class="form-group">
+              <span class="input-group-text" style="font-size: 25px; margin-right: 5px; color: #5eba7d;">
+                <i class="fa fa-user"></i>
+            </span>
+              <label >Password</label>
+              <input type="password" #pwInput class="form-control" placeholder="Password">
+            </div>
+            
+            <button class="btn btn-primary"  (click)="onLoginButtonClicked(emailInput.value,pwInput.value)">Submit</button>
+          </form>
+    </div>
+</div>-->
+
+
+
+<div class=" centered-content">
+
+
+    <div class="loginform" class="login-box">
+  
+      <div class="panel">
+        <h1 style="text-align: center; font-weight:bolder; font-size:x-large; color: #0095ff; ">Login</h1>
+        <hr>
+        <p class="text-success" style="font-weight: bold;">Please enter your Email & Password</p>
+      </div>
+  
+      <div>
+        <div class="form-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="font-size: 25px; margin-right: 5px; color: #5eba7d;">
+              <i class="fa fa-lock"></i>
+            </span>
+            <input type="email" #emailInput id="email" name="email" class="form-control" placeholder="Enter the Email"
+              required>
+          </div>
+          <!--<div *ngIf="!email.valid">
+                                <div class="alert alert-danger"
+                                    *ngIf="email.touched && (!email.dirty || email.value=='')">
+                                    **Please Enter the Email
+                                </div>-->
+  
+        </div>
+  
+  
+        <div class="form-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="font-size: 25px; margin-right: 5px;color: #0095ff;">
+              <i class="fa fa-lock"></i>
+            </span>
+            <input type="password" #pwInput id="password" name="password" class="form-control"
+              placeholder="Enter the Password" required>
+          </div>
+          <!--<div class="alert alert-danger" *ngIf="password.invalid && password.touched">
+                                **Please Enter the Password
+                            </div>-->
+        </div>
+  
+        <!-- <div class="captchaClass">
+                            <ngx-recaptcha2 [siteKey]="siteKey" name="captchaElement" ngModel #captchaElement="ngModel"
+                                required></ngx-recaptcha2>
+                        </div>-->
+  
+  
+        <br>
+        <button class="btn btn-outline-success" (click)="onSignupButtonClicked(emailInput.value,pwInput.value)"
+          style="width: 100%;">Login</button>
+  
+        <!--<a (click)="onsignup()">Signup Here</a>-->
+  
+      </div>
+  
+      <!--<button class="badge badge-pill badge-success" style="font-size:medium;" (click)="onsignup()" >Register Here</button>-->
+  
+  
+  
+  
+      <br>
+  
+  
+    </div>
+  
+  
+  </div>
