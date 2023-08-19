@@ -8,7 +8,6 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-
         },
         "@schematics/angular:application": {
           "strict": true
@@ -105,6 +104,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@zeit/ng-deploy:deploy"
         }
       }
     }
