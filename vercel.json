@@ -1,16 +1,17 @@
 {
-    "builds": [
-      {
-        "src": "app/pages/task-view/task-view.component.scss",
+    "version": 2,
+      "builds": [
+        {
+          "src": "src/index.html", 
         "use": "@vercel/static",
-        "config": {
-          "maxSize": "3kb"
+          "config": {
+            "maxSize": "3kb"
+          }
         }
-      }
-    ],
+      ],
+      
+      "rewrites": [
+        { "source": "/(.*)", "destination": "/index.html" }
+      ]
     
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/index.html" }
-    ]
-  
-  }
+    }
